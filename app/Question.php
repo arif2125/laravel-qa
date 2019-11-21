@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Question extends Model
 {
    //Mass assignment -zharif
-   protected $fillable = ['title','body'];
+   protected $fillable = ['title','body','slug'];
 
    //Relationship between user model        
    public function user(){
@@ -16,7 +16,7 @@ class Question extends Model
 
    
     //Mutator.So everytime we enter value, it will do something to Title Attribute
-    public function setTitleAttributes($value){
+    public function setTitleAttribute($value){
         $this->attributes['title'] = $value;
         $this->attributes['slug'] = str_slug($value);
 
