@@ -44,5 +44,10 @@ class User extends Authenticatable
     }
 
 
+    public function getUrlAttribute(){
+       return '#';
+    }
+
+
 
 }
