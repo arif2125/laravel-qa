@@ -6,3 +6,16 @@
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+
+
+.counter{
+    margin-right:30px;
+    font-size:10px;
+    text-align:center;
+}
+
+.vote,.answers{
+    width:60px;
+    height:60px;
+    border:1px solid red;
+}
